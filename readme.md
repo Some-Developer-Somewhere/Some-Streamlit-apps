@@ -37,7 +37,7 @@ A preferable pre-requisit is some basic knowledge of how to use GIT. **Maybe a w
 3. Develop the app locally to a working version (only 2 lines of code required)
 4. Push the changes to the GitHub repo
     - > git add --all
-    - > git commit -a -m "This is a description of what I added/committed"
+    - > git commit -a -m "I did something"
     - > git push
 5. Deploying the first time
     - You should have working code in a public GitHub repo
