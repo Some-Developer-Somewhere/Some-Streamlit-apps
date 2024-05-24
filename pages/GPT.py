@@ -29,8 +29,6 @@ client = OpenAI(api_key=api_key_input)
 
 def get_openai_response(messages, model):
     response = client.chat.completions.create(
-        # model="gpt-4",
-        # model="gpt-4o",
         model=model,
         messages=messages,
         stream=True
@@ -45,7 +43,7 @@ if "chat_history" not in st.session_state:
 #     st.session_state.user_message = ""
 
 
-options = ["gpt-4o", "gpt-4", "gpt-3.5"]
+options = ["gpt-4o", "gpt-4-turbo", "gpt-4", "gpt-3.5"]
 selected_model = st.selectbox("Model:", options)
 # st.write(f"Selected model: {selected_model}")
 
